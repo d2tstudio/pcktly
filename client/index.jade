@@ -8,9 +8,9 @@ head
 body
   +navbar
   .row.index
-    .col-md-2
+    .col-md-3
       +sidebar
-    .col-md-8.col-md-offset-1
+    .col-md-8
       .row
         .col-md-12
           +intro
@@ -20,6 +20,9 @@ body
       .row
         .col-md-12
           +post
+  .row
+    .col-md-12
+      +footer
 
 template(name="navbar")
   nav.navbar.navbar-light.bg-faded
@@ -89,3 +92,7 @@ template(name="post")
           h3.card-title Special title treatment
           p.card-text With supporting text below as a natural lead-in to additional content.
           a.btn.btn-sm.btn-primary-outline(href='#') Go somewhere
+
+template(name="footer")
+  .footer
+    Copyright © 2015 The Birkett

@@ -15,7 +15,15 @@
 
 
 .sidebar {
+  padding-right: 50px;
   li {
     text-align: right;
   }
+}
+
+.footer {
+  background-color: #f6f6f6;
+  padding: 100px 0px;
+  text-align: center;
+  color: grey;
 }
