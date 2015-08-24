@@ -1,0 +1,47 @@
+head
+  title pkctly
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+  link(rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css")
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+  script(src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js")
+
+body
+  .container
+    .row
+      .col-md-8.col-md-offset-3
+        +intro
+    .row
+      .col-md-8.col-md-offset-3
+        +subscribeForm
+    .row
+      .col-md-8.col-md-offset-3
+        +post
+
+template(name="intro")
+  .intro
+    h1.display-1 Hello
+    p.lead Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.
+
+template(name="subscribeForm")
+  .subscribeForm
+    form
+      .col-lg-6
+        .input-group
+          input.form-control.form-control-lg(type='text', placeholder='Your email bro')
+          span.input-group-btn
+            button.btn.btn-lg.btn-success(type='button') Subscribe
+
+
+template(name="post")
+  .post
+    .row
+      .col-sm-6
+        .card.card-block
+          h3.card-title Special title treatment
+          p.card-text With supporting text below as a natural lead-in to additional content.
+          a.btn.btn-sm.btn-primary-outline(href='#') Go somewhere
+      .col-sm-6
+        .card.card-block
+          h3.card-title Special title treatment
+          p.card-text With supporting text below as a natural lead-in to additional content.
+          a.btn.btn-sm.btn-primary-outline(href='#') Go somewhere
